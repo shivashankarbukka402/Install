@@ -16,7 +16,7 @@ fi
 
 # Download
 TMP_ZIP="/tmp/sonar-scanner-cli.zip"
-wget -q https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux-x64.zip -0 "$TMP_ZIP" || {
+wget -q https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux-x64.zip -o "$TMP_ZIP" || {
   echo "Failed to download SonarScanner. Check version or internet connection."; exit 1;
 }
 
